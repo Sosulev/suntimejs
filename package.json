@@ -1,6 +1,6 @@
 {
   "name": "suntimejs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "expanding the dayjs library getting sunrise and sunset times",
   "main": "suntimejs.js",
   "scripts": {
