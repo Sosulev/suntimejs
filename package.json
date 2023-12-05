@@ -1,6 +1,6 @@
 {
   "name": "suntimejs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "expanding the dayjs library getting sunrise and sunset times",
   "main": "suntimejs.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/myname/mypackage.git"
+    "url": "git+https://github.com/Sosulev/suntimejs"
   },
   "keywords": [
     "sunrise",

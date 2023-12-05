@@ -14,29 +14,6 @@ param = 'twilightSet' возвращает объект - время вечер�
 param = degrees Возвращает объект {rise, set, length} - время наклона солнца над горизонтом по углом "degrees" а так же длительность дня
 
 Установка:
-?npm i suntimejs
-
-Пример:
-const dayjs = require('dayjs');
-const latitude=53.87;     // Людиново
-const longitude=34.44;    // Людиново
-const suntimejs=require('suntimejs')
-dayjs.extend(suntimejs, {latitude, longitude});
-const now = dayjs();
-
-console.log ('Sunrise in the city of Lyudinovo', now.sunTime('sunRise').format('DD.MM.YYYY HH:mm'));
-console.log ('Sunset in the city of Lyudinovo', now.sunTime('sunSet').format('DD.MM.YYYY HH:mm'));
-console.log ('Length of daylight (minute)', now.sunTime('sun').length);
-
-console.log ('Morning twilight', now.sunTime('twilightRise').format('DD.MM.YYYY HH:mm'));
-console.log ('Evening Twilight', now.sunTime('twilightSet').format('DD.MM.YYYY HH:mm'));
-
-const {rise, set} = now.sunTime(3)
-console.log ('Time in the morning, at a sun angle of 3 degrees', rise.format('DD.MM.YYYY HH:mm'));
-console.log ('Time in the evening, with a sun angle of 3 degrees', set.format('DD.MM.YYYY HH:mm'));
-
-const {azimuth, altitude} = now.sunPositions()
-console.log ('Azimuth now', azimuth);
-console.log ('Altitude now', altitude);
+>npm i suntimejs
 
 
