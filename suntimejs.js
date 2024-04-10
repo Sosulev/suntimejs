@@ -109,7 +109,7 @@ const dayjs = require('dayjs');
       const yhor = y;
       const zhor = x * Math.cos(latitude * Math.PI / 180) + z * Math.sin(latitude * Math.PI / 180);
       const azimuth = Math.ceil(to360range(Math.atan2(yhor, xhor) * (180 / Math.PI) + 180)*100)/100
-      const altitude = zhor >= 0 ? Math.ceil(Math.asin(zhor) * (180 / Math.PI)*100)/100 : 0
+      const altitude = Math.ceil(Math.asin(zhor) * (180 / Math.PI)*100)/100
       return {azimuth, altitude}
     }
   }
